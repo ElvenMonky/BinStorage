@@ -8,8 +8,8 @@
     <ProjectGuid>{3CCAB553-F340-4B58-9A3C-51A677321B13}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Zylab.Interview.BinStorage.PerfTestApp</RootNamespace>
-    <AssemblyName>Zylab.Interview.BinStorage.PerfTestApp</AssemblyName>
+    <RootNamespace>BinStorage.PerfTestApp</RootNamespace>
+    <AssemblyName>BinStorage.PerfTestApp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -55,6 +55,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BinStorage\BinStorage.csproj">
+      <Project>{d4c5f6a9-7989-40ea-8bbc-07b6e0fd8a47}</Project>
+      <Name>BinStorage</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
